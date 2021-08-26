@@ -29,6 +29,7 @@ def add_student():
         student['name'] = request.form.get('student_name')
         student['english_mark'] = request.form.get('english_mark')
         student['science_mark'] = request.form.get('science_mark')
+        student['mathematics_mark'] = request.form.get('mathematics_mark')
         student['does_homework'] = request.form.get('does_homework') == 'on'
         # TODO: Add new keys to student dictionary for new fields
 
@@ -39,7 +40,7 @@ def add_student():
         # Open up the csv file and overwrite the contents
         with open('students.csv', 'w', newline='') as file:
             # TODO: Edit the fieldnames to include the new fields
-            fieldnames = ['name', 'english_mark', 'science_mark', 'does_homework']
+            fieldnames = ['name', 'english_mark', 'science_mark', 'mathematics_mark', 'does_homework']
             writer = csv.DictWriter(file, fieldnames = fieldnames)
             writer.writeheader()
             writer.writerows(students)
