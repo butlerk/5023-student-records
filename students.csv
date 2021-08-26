@@ -1,3 +1,7 @@
 name,english_mark,science_mark,does_homework
 Jack,90,90,True
 Dom,80,80,False
+Dan,70,70,True
+Xavier,90,70,False
+Mason,70,110,True
+
