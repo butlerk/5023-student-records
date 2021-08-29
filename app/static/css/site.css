@@ -1,3 +1,19 @@
 .content {
     padding: 1em 2em;
 }
+h2{
+    color:brown;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+th, td {
+    border-bottom: 1px solid #ddd;
+  }
